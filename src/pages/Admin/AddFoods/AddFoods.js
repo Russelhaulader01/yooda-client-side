@@ -7,7 +7,7 @@ const AddFoods = () => {
     const onSubmit = data => {
         console.log(data);
         
-        axios.post('http://localhost:5000/addFoods', data)
+        axios.post('https://immense-harbor-44680.herokuapp.com/addFoods', data)
             .then(res => {
                 if (res.data.acknowledged) {
                     window.alert('Success')
@@ -16,9 +16,9 @@ const AddFoods = () => {
             })
     }
     return (
-        <div>
+        <div className='boxContainer text-center'>
             <h5>Add Foods</h5>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form className='text-center ' onSubmit={handleSubmit(onSubmit)}>
                 <input placeholder='Food' {...register("name", { required: true })} /> <br />
                 {errors.name && <span>This field is required</span>}<br />
 

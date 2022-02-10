@@ -13,7 +13,7 @@ const AllFoods = () => {
     const [show, setShow] = useState(false);
     useEffect(() => {
         // call api with search query
-        fetch(`http://localhost:5000/allFoods?page=${page}&&size=${size}`)
+        fetch(`https://immense-harbor-44680.herokuapp.com/allFoods?page=${page}&&size=${size}`)
             .then(res => res.json())
             .then(data => {
                 setItemsCount(Math.ceil(data.items / size))
@@ -31,7 +31,7 @@ const AllFoods = () => {
     const handleDelete = (id) => {
         const confirm = window.confirm('Are you suer?')
         if (confirm) {
-            axios.post('http://localhost:5000/foodDelete', { id })
+            axios.post('https://immense-harbor-44680.herokuapp.com/foodDelete', { id })
                 .then(res => {
                     if (res.data.deletedCount > 0) {
                         const restStudents = foods.filter(food => food._id !== id);
@@ -44,7 +44,7 @@ const AllFoods = () => {
 
     const handleUpdate = (data) => {
         console.log(data);
-        axios.post('http://localhost:5000/foodUpdate', data)
+        axios.post('https://immense-harbor-44680.herokuapp.com/foodUpdate', data)
             .then(res => {
                 if (res.data.acknowledged) {
                     const restItems = foods.map(item => {
@@ -73,6 +73,7 @@ const AllFoods = () => {
     
     return (
         <div>
+            <h4>All Foods</h4>
                 <Table responsive="md">
                     <thead>
                         <tr>

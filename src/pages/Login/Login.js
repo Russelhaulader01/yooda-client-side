@@ -20,7 +20,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const saveUserInfo = (data) => {
-    axios.post('http://localhost:5000/saveUser', data)
+    axios.post('https://immense-harbor-44680.herokuapp.com/saveUser', data)
       .then(res => setLoad(false))
   }
 
@@ -82,7 +82,7 @@ const Login = () => {
     }
   }
   return (
-    <div className='text-center mt-5'>
+    <div className='text-center mt-5 pt-5  mx-auto'>
       <form onSubmit={handleSubmit(onSubmit)}>
         {page === 'register' && <>
           <input placeholder='Name' {...register("name", { required: true })} /> <br />
@@ -99,12 +99,12 @@ const Login = () => {
           <input placeholder='Confirm Password' {...register("confirmPassword", { required: true })} /> <br />
           {errors.confirmPassword && <span>This field is required</span>}<br />
         </>}
-        <input type="submit" />
+        <input className='btn btn-secondary' type="submit" />
 
         {page === 'register' ? <>
-          <p onClick={() => togglePage('register')}>Login</p>
+          <p style={{cursor:'pointer'}}  onClick={() => togglePage('register')}>Login</p>
         </> :
-          <p onClick={() => togglePage('login')}>Create Account</p>
+          <p  style={{cursor:'pointer'}} onClick={() => togglePage('login')}>Create Account</p>
         }
       </form>
       <p>{error}</p>

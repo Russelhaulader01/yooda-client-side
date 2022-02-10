@@ -9,7 +9,7 @@ const FoodDisplayItem = (props) => {
             <td>{id}</td>
             <td>{name}</td>
             <td>{price}</td>
-            <td> <Link to={`/order/${_id}`}> <button>Order Now</button></Link></td>
+            <td> <Link to={`/order/${_id}`}> <button className='btn btn-secondary'>Order Now</button></Link></td>
         </tr>
     );
 };

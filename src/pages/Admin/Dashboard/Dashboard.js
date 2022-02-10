@@ -11,21 +11,9 @@ const Dashboard = () => {
                 <div className='p-3 mt-2'>
                     <div className='dashboardContainer row'>
                         <div className='col-12 col-md-3 link-container'>
-                            <Link to='/dashboard/addFoods'>
+                            <Link to='/dashboard/serveFood'>
                                 <div className='d-flex align-items-center justify-content-between link-item'>
-                                    <p>Add Foods </p>
-                                    <i className="fas fa-long-arrow-alt-right"></i>
-                                </div>
-                            </Link>
-                            <Link to='/dashboard/addStudents'>
-                                <div className='d-flex align-items-center justify-content-between link-item'>
-                                    <p>Add Student </p>
-                                    <i className="fas fa-long-arrow-alt-right"></i>
-                                </div>
-                            </Link>
-                            <Link to='/dashboard/allFoods'>
-                                <div className='d-flex align-items-center justify-content-between link-item'>
-                                    <p>All Foods </p>
+                                    <p>Serve Food </p>
                                     <i className="fas fa-long-arrow-alt-right"></i>
                                 </div>
                             </Link>
@@ -35,9 +23,21 @@ const Dashboard = () => {
                                     <i className="fas fa-long-arrow-alt-right"></i>
                                 </div>
                             </Link>
-                            <Link to='/dashboard/serveFood'>
+                            <Link to='/dashboard/allFoods'>
                                 <div className='d-flex align-items-center justify-content-between link-item'>
-                                    <p>Serve Food </p>
+                                    <p>All Foods </p>
+                                    <i className="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                            </Link>
+                            <Link to='/dashboard/addFoods'>
+                                <div className='d-flex align-items-center justify-content-between link-item'>
+                                    <p>Add Foods </p>
+                                    <i className="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                            </Link>
+                            <Link to='/dashboard/addStudents'>
+                                <div className='d-flex align-items-center justify-content-between link-item'>
+                                    <p>Add Student </p>
                                     <i className="fas fa-long-arrow-alt-right"></i>
                                 </div>
                             </Link>

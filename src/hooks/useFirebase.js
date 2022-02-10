@@ -59,7 +59,7 @@ const useFirebase = () => {
 
   useEffect(() => {
     if (user?.email) {
-      axios.get(`http://localhost:5000/checkRole/${user.email}`)
+      axios.get(`https://immense-harbor-44680.herokuapp.com/checkRole/${user.email}`)
         .then(res => {
           setRole(res)
           console.log(res);

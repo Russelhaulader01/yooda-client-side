@@ -10,7 +10,7 @@ const FoodDisplay = () => {
     const [size, setSize] = useState(5);
     useEffect(() => {
         // call api with search query
-        fetch(`http://localhost:5000/allFoods?page=${page}&&size=${size}`)
+        fetch(`https://immense-harbor-44680.herokuapp.com/allFoods?page=${page}&&size=${size}`)
             .then(res => res.json())
             .then(data => {
                 setItemsCount(Math.ceil(data.items / size))
@@ -18,7 +18,7 @@ const FoodDisplay = () => {
             });
     }, [page]);
     return (
-        <div className='mt-5 p-5'>
+        <div className='mt-5 p-5 boxContainer mx-auto'>
                 <Table className=' pt-5' responsive="md">
                     <thead>
                         <tr>

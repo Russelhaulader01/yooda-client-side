@@ -5,7 +5,7 @@ import useAuth from "../../hooks/useAuth";
 import "./Navigation.css";
 
 const Navigation = () => {
-  const {logOut} = useAuth()
+  const { logOut, user } = useAuth()
   return (
     <Navbar className="custome-bg w-100" variant="dark" expand="lg" fixed="top">
       <Container>
@@ -29,10 +29,10 @@ const Navigation = () => {
               Home
             </Nav.Link>
             <Nav.Link as={Link} to="/dashboard" className="text-white nav_link">
-              Dashboard
+              Admin
             </Nav.Link>
           </Nav>
-         
+
           <Nav.Link as={Link} className="text-white nav_link" to="/foods">
             Order Foods
           </Nav.Link>
@@ -41,6 +41,11 @@ const Navigation = () => {
               <button className="login-btn" onClick={logOut}>Log Out</button>
             </div>
           </Nav.Link>
+          {user?.displayName && <Nav.Link as={Link} to="/home">
+            <div className="login-or-signup">
+              <button className="login-btn">{user?.displayName}</button>
+            </div>
+          </Nav.Link>}
         </Navbar.Collapse>
       </Container>
     </Navbar>

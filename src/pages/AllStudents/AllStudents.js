@@ -15,7 +15,7 @@ const AllStudents = () => {
 
     useEffect(() => {
         // call api with search query
-        fetch(`http://localhost:5000/allStudents?page=${page}&&size=${size}`)
+        fetch(`https://immense-harbor-44680.herokuapp.com/allStudents?page=${page}&&size=${size}`)
             .then(res => res.json())
             .then(data => {
                 setItemsCount(Math.ceil(data.items / size))
@@ -26,7 +26,7 @@ const AllStudents = () => {
     const handleDelete = (id) => {
         const confirm = window.confirm('Are you suer?')
         if (confirm) {
-            axios.post('http://localhost:5000/stuDelete', { id })
+            axios.post('https://immense-harbor-44680.herokuapp.com/stuDelete', { id })
                 .then(res => {
                     if (res.data.deletedCount > 0) {
                         const restStudents = students.filter(student => student._id !== id);
@@ -45,7 +45,7 @@ const AllStudents = () => {
     }
     const handleUpdate = (data) => {
         console.log(data);
-        axios.post('http://localhost:5000/stuUpdate', data)
+        axios.post('https://immense-harbor-44680.herokuapp.com/stuUpdate', data)
             .then(res => {
                 if (res.data.acknowledged) {
                     const restItems = students.map(item => {
@@ -103,7 +103,7 @@ const AllStudents = () => {
         e.target.reset()
         // sending updated item to server for change status from db
         if (updatedItemsId.length > 0) {
-            axios.post('http://localhost:5000/changeStatus', { updatedItemsId, changeTo })
+            axios.post('https://immense-harbor-44680.herokuapp.com/changeStatus', { updatedItemsId, changeTo })
                 .then(res => {
                     window.alert('success')
                 })
@@ -114,7 +114,7 @@ const AllStudents = () => {
     }
     return (
         <div>
-            <h1>All students</h1>
+            <h4>All students</h4>
             <form onSubmit={handleSubmit}>
                 <Table responsive="md">
                     <thead>
@@ -142,14 +142,14 @@ const AllStudents = () => {
 
                     </tbody>
                 </Table>
-                <div>
-                    <label>Change selected student status to </label>
-                    <select name="changeStatus" required>
+                <div className='text-end pe-5'>
+                    <h6 className=' mb-1 pb-0'>Change selected student status</h6>
+                    <select className='btn btn-secondary' name="changeStatus" required>
                         <option value="">Select</option>
                         <option value="Active">Active</option>
                         <option value="InActive">InActive</option>
                     </select>
-                    <input type="submit" value="Change" />
+                    <input className='ms-2 btn btn-secondary' type="submit" value="Change" />
                 </div>
             </form>
             {

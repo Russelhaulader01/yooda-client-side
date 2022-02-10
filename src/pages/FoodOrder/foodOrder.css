@@ -1,0 +1,20 @@
+
+.foodOrderContainer label{
+    text-align: start;
+    padding: 30px;
+    margin-top: 100px;
+}
+.boxContainer{
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 20px;
+   padding: 15px;
+    width: 50%;
+   
+}
+@media  (max-width:500px) {
+    .boxContainer{
+        border: 1px solid rgb(207, 207, 207);
+        border-radius: 20px;
+        width: 80%;
+    }
+}

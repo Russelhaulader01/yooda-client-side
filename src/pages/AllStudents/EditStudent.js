@@ -8,7 +8,7 @@ const EditStudent = ({ show, handleClose, handleUpdate, id }) => {
     const [data, setData] = useState({})
     useEffect(() => {
         console.log(id);
-        fetch(`http://localhost:5000/student/${id}`)
+        fetch(`https://immense-harbor-44680.herokuapp.com/student/${id}`)
             .then(res => res.json())
             .then(data => {
                 setData(data)

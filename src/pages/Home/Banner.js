@@ -4,14 +4,13 @@ import "./Banner.css";
 const Banner = () => {
   return (
     <div className="banner">
-      <div className="banner-text animate__animated animate__backInLeft">
-        <div className="main_title">
-          <h1 className="text-center text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit
+      <div className="banner-text w-75 animate__animated animate__backInLeft">
+        <div className="main_title  text-center">
+          <h1 className=" text-white">
+           Welcome to Yooda Hostel
           </h1>
           <p className="text-white py-3">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
-            modi?
+           Very easily you can select your meals form order foods. Sell all food and order now for your desire shift, date, by using your Roll number.
           </p>
         </div>
         {/* <div className="input-group my-4 search_box">

@@ -7,7 +7,7 @@ const AddStudents = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:5000/addStudents', data)
+        axios.post('https://immense-harbor-44680.herokuapp.com/addStudents', data)
             .then(res => {
                 if (res.data.acknowledged) {
                     window.alert('Success')
@@ -17,9 +17,9 @@ const AddStudents = () => {
     }
     return (
 
-        <div>
+        <div className='boxContainer text-center'>
             <h5>Add Students</h5>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form className='text-center ' onSubmit={handleSubmit(onSubmit)}>
                 <input placeholder='Full Name' {...register("name", { required: true })} /> <br />
                 {errors.name && <span>This field is required</span>}<br />
                
@@ -38,14 +38,14 @@ const AddStudents = () => {
                 <input placeholder='Hall' {...register("hall", { required: true })} /><br />
                 {errors.hall && <span>This field is required</span>}<br />
 
-                <select className='w-50' {...register("status", { required: true })}>
+                <select  {...register("status", { required: true })}>
                     <option value="">Status</option>
                     <option value="Active">Active</option>
                     <option value="InActive">inActive</option>
                 </select> <br />
                 {errors.status && <span>This field is required</span>}<br />
 
-                <input type="submit" />
+                <input className='btn btn-secondary' type="submit" />
             </form>
         </div>
     );

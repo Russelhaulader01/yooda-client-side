@@ -8,7 +8,7 @@ const EditFood = ({ show, handleClose, handleUpdate, id }) => {
     const [data, setData] = useState({})
     useEffect(() => {
         console.log(id);
-        fetch(`http://localhost:5000/food/${id}`)
+        fetch(`https://immense-harbor-44680.herokuapp.com/food/${id}`)
             .then(res => res.json())
             .then(data => {
                 setData(data)
