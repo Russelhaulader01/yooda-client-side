@@ -1,0 +1,8 @@
+.pagination-selected{
+    background-color: tomato;
+    margin: 5px;
+    color: white;
+}
+.deleteBtn{
+    cursor: pointer;
+}

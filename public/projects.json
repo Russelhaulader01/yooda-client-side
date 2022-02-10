@@ -1,0 +1,278 @@
+[
+    {
+        "id": 1,
+        "name": "Health Care Hospital",
+        "photos": [
+            {
+                "src": "https://i.ibb.co/cYPFLfQ/Screenshot-102.png",
+                "width": 4,
+                "height": 3
+            },
+            {
+                "src": "https://i.ibb.co/rvZ4NqD/Screenshot-103.png",
+                "width": 1,
+                "height": 1
+            },
+            {
+                "src": "https://i.ibb.co/SmkssXT/Screenshot-104.png",
+                "width": 3,
+                "height": 4
+            },
+            {
+                "src": "https://i.ibb.co/qYcssjR/Screenshot-106.png",
+                "width": 3,
+                "height": 4
+            },
+            {
+                "src": "https://i.ibb.co/17Z7Y8P/Screenshot-107.png",
+                "width": 3,
+                "height": 4
+            },
+            {
+                "src": "https://i.ibb.co/d4hTdYc/Screenshot-118.png",
+                "width": 4,
+                "height": 3
+            }
+        ],
+        "details": "Hospital Related Website. Multi-page web application. Responsive Design,   Google SignIn,   Email SignIn,   Service Details,   Doctors Page,  Protected Route have been implemented.",
+        "functionality": [
+            " Click service to see details information of service.",
+            "Protected Route.",
+            "Doctors page., ",
+            "Responsive design.",
+            "Animation for nice feel."
+        ],
+        "technology": "HTML, CSS3, bootstrap, mobile responsive, React js, React Router, Firebase Authentication, fontawsome icon, google fonts, Swiper js-img slider, AOS (animation on scroll) effect, sweet alert, "
+    },
+    {
+        "id": 2,
+        "name": "Hemet Hut",
+        "photos": [
+            {
+                "src": "https://i.ibb.co/1MYD0pW/Screenshot-109.png",
+                "width": 4,
+                "height": 3
+            },
+            {
+                "src": "https://i.ibb.co/svKXRrk/Screenshot-110.png",
+                "width": 1,
+                "height": 1
+            },
+            {
+                "src": "https://i.ibb.co/S509mh3/Screenshot-111.png",
+                "width": 3,
+                "height": 4
+            },
+            {
+                "src": "https://i.ibb.co/4gK3LvK/Screenshot-112.png",
+                "width": 3,
+                "height": 4
+            },
+            {
+                "src": "https://i.ibb.co/2Yk7FMx/Screenshot-113.png",
+                "width": 4,
+                "height": 3
+            },
+            {
+                "src": "https://i.ibb.co/HPZBbq8/Screenshot-114.png",
+                "width": 3,
+                "height": 4
+            },
+            {
+                "src": "https://i.ibb.co/C22Nw9N/Screenshot-115.png",
+                "width": 3,
+                "height": 4
+            },
+            {
+                "src": "https://i.ibb.co/Tk0Q1R4/Screenshot-116.png",
+                "width": 1,
+                "height": 1
+            },
+            {
+                "src": "https://i.ibb.co/FDpmW96/Screenshot-117.png",
+                "width": 3,
+                "height": 4
+            },
+            {
+                "src": "https://i.ibb.co/d4hTdYc/Screenshot-118.png",
+                "width": 4,
+                "height": 3
+            }
+        ],
+        "details": "Helmet selling website.It’s a full-stack multi-page web application. Responsive Design, Admin role, Google Sign-in, Email Sign-in, and CRUD operations like add order, add a review with star rating, cancel an order, add product, delete products, manage orders, and update orders status, functionalities have been implemented.",
+        "functionality": [
+            "User can place an order.",
+            "User can cancel his/her orders.",
+            "User can add a review with star rating.",
+            "User and admin dashboard are different",
+            "Check Admin Role(email:'aaa@aaa.com', pass: '123456' ",
+            "Admin can create new item or delete any items from database.",
+            "Admin also able to make a new admin.",
+            "Admin can update orders status and delete any order.",
+            "firebase google authentication",
+            "react router routing",
+            "context api and react hooks for state management"
+        ],
+        "technology": "HTML, CSS3, Material UI, mobile responsive, React, React Router, Firebase Authentication, Mongodb, nodejs, express js, fontawsome icon, google fonts, "
+    },
+    {
+        "id": 3,
+        "name": "Food Express",
+        "photos": [
+            {
+                "src": "https://i.ibb.co/py019kk/Screenshot-119.png",
+                "width": 4,
+                "height": 3
+            },
+            {
+                "src": "https://i.ibb.co/WpgD92n/Screenshot-120.png",
+                "width": 1,
+                "height": 1
+            },
+            {
+                "src": "https://i.ibb.co/WtFFSW3/Screenshot-121.png",
+                "width": 3,
+                "height": 4
+            },
+            {
+                "src": "https://i.ibb.co/tzFDmSk/Screenshot-122.png",
+                "width": 3,
+                "height": 4
+            },
+            {
+                "src": "https://i.ibb.co/pRnp82w/Screenshot-124.png",
+                "width": 3,
+                "height": 4
+            },
+            {
+                "src": "https://i.ibb.co/stSf8zq/Screenshot-125.png",
+                "width": 4,
+                "height": 3
+            },
+            {
+                "src": "https://i.ibb.co/D8NZd1T/Screenshot-126.png",
+                "width": 3,
+                "height": 4
+            },
+            {
+                "src": "https://i.ibb.co/F7j13ym/Screenshot-127.png",
+                "width": 4,
+                "height": 3
+            }
+        ],
+        "details": "It's a food delivery-related full-stack multi-page web application with a responsive design.Users can place an order and cancel their order. There are  also add products, update order functionalities have been implemented.",
+        "functionality": [
+            "User can see food details and place them in his/her order list",
+            "User can cancel his/her orders.",
+            "create items and save into database",
+            "update orders status.",
+            "firebase google authentication.",
+            "react router routing.",
+            "context api and react hooks for state management.",
+            "Responsive design"
+        ],
+        "technology": "HTML, CSS3, bootstrap, mobile responsive, React, React Router, Firebase Authentication, Mongodb, nodejs, fontawsome icon, google fonts, sweet alert, AOS (animation on scroll) ,"
+    },
+    {
+        "id": 4,
+        "name": "Explore Bangladesh",
+        "photos": [
+            {
+                "src": "https://i.ibb.co/5KCCKNj/Screenshot-128.jpg",
+                "width": 4,
+                "height": 3
+            },
+            {
+                "src": "https://i.ibb.co/BVg7q7h/Screenshot-129.jpg",
+                "width": 1,
+                "height": 1
+            },
+            {
+                "src": "https://i.ibb.co/9nTmzc4/Screenshot-130.jpg",
+                "width": 3,
+                "height": 4
+            }
+        ],
+        "details": "Tour plan related website. People can easily get information from this site",
+        "functionality": [
+            "User can add any package to their list",
+            "Users able to see whole cost of his/her selected spot"
+        ],
+        "technology": "HTML, vanilla CSS, bootstrap, React, fontawsome icon, google fonts, "
+    },
+    {
+        "id": 5,
+        "name": "Swimming Academy",
+        "photos": [
+            {
+                "src": "https://i.ibb.co/b6BnGWm/Screenshot-131.png",
+                "width": 4,
+                "height": 3
+            },
+            {
+                "src": "https://i.ibb.co/FVpJDBq/Screenshot-132.png",
+                "width": 1,
+                "height": 1
+            },
+            {
+                "src": "https://i.ibb.co/ScRKvG8/Screenshot-133.png",
+                "width": 3,
+                "height": 4
+            },
+            {
+                "src": "https://i.ibb.co/CJWjCKq/Screenshot-134.png",
+                "width": 4,
+                "height": 3
+            },
+            {
+                "src": "https://i.ibb.co/V270STw/Screenshot-135.png",
+                "width": 3,
+                "height": 4
+            }
+        ],
+        "details": "It's a swimming training institution related website. From this site user able to see all package and updates",
+        "functionality": [
+            "User can see all package",
+            "User can see package details by clicking details button",
+            "Multi page website"
+        ],
+        "technology": "HTML, CSS3, bootstrap, mobile responsive, React, React Router, fontawsome icon, google fonts,"
+    },
+    {
+        "id": 6,
+        "name": "Daraz Landing page ",
+        "photos": [
+            {
+                "src": "https://i.ibb.co/mBPtnxG/Screenshot-136.png",
+                "width": 4,
+                "height": 3
+            },
+            {
+                "src": "https://i.ibb.co/BBYFByX/Screenshot-137.png",
+                "width": 3,
+                "height": 4
+            },
+            {
+                "src": "https://i.ibb.co/znJcQ5x/Screenshot-138.png",
+                "width": 4,
+                "height": 3
+            },
+            {
+                "src": "https://i.ibb.co/CmVnmSg/Screenshot-139.png",
+                "width": 4,
+                "height": 3
+            },
+            {
+                "src": "https://i.ibb.co/djPfpwX/Screenshot-140.png",
+                "width": 3,
+                "height": 4
+            }
+        ],
+        "details": "Tour plan related website. People can easily get information from this site",
+        "functionality": [
+            "User can add any package to their list",
+            "Users able to see whole cost of his/her selected spot"
+        ],
+        "technology": "HTML, vanilla CSS, bootstrap, React, fontawsome icon, google fonts, "
+    }
+]

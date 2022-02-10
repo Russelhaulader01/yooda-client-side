@@ -1,0 +1,71 @@
+.footer {
+  background: #09080e;
+  color: #fff;
+}
+.about {
+  text-align: justify;
+}
+.service {
+  text-align: justify;
+}
+.service h6 {
+  font-weight: 400;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.service h6:hover {
+  transform: translate(10px);
+}
+.follow {
+  text-align: justify;
+  margin-left: 40px;
+}
+.follow h6 {
+  font-weight: 400;
+}
+.icon {
+  text-align: justify;
+  margin-left: 40px;
+}
+.icon span {
+  margin-right: 20px;
+
+  color: #fff;
+}
+.icon span .fab {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.icon span .fab:hover {
+  transform: translateY(-7px);
+  color: crimson;
+}
+
+@media only screen and (max-width: 600px) {
+  .about p,
+  h5 {
+    margin-left: 40px;
+  }
+  .about p {
+    font-size: 1.2rem;
+  }
+  .service {
+    padding-top: 10px;
+    margin-left: 40px;
+  }
+  .service h4 {
+    font-size: 1.1rem;
+  }
+  .service h6 {
+    font-size: 300;
+  }
+  .service h6 {
+    font-size: 0.9rem;
+  }
+}
